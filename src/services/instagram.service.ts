@@ -18,7 +18,7 @@ export const getPost = async (id: string): Promise<Post | null> => {
   return response?.data?.find((post) => post.id === id) ?? null
 }
 
-export const getPostsByUser = async (userId: string): Promise<Post[]> => {
+export const getPostsByUser = async (username: string): Promise<Post[]> => {
   const response = await fetchInstagram()
-  return response?.data?.filter((post) => post.user.id === userId) ?? []
+  return response?.data?.filter((post) => post.user.username === username) ?? []
 }
