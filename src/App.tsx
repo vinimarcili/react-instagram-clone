@@ -3,8 +3,8 @@ import HomePage from "./pages/Home/Home.page"
 import NotFoundPage from "./pages/NotFound/NotFound.page"
 import UserPage from "./pages/User/User.page"
 import PostPage from "./pages/Post/Post.page"
-import Header from "./components/Header/Header"
-import Footer from "./components/Footer/Footer"
+import Header from "./components/Header/Header.component"
+import Footer from "./components/Footer/Footer.component"
 
 function App() {
   return (
