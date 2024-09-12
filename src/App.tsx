@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <main className="mx-auto p-4 w-full h-full">
+      <main className="mx-auto p-4 w-full h-full overflow-y-auto">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/:username" element={<UserPage />} />
