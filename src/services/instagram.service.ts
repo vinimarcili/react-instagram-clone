@@ -25,10 +25,10 @@ export const getPostsByUser = async (username: string): Promise<Post[]> => {
   return response?.data?.filter((post) => post.user.username === username) ?? []
 }
 
-export const getUserPhotoURL = async (username: string): Promise<string> => {
+export const getUserPhotoURL = (username: string): string => {
   return `${USER_IMAGE_URL}${username}`
 }
 
-export const getFeedPhotoURL = async (id: string, size = 500): Promise<string> => {
+export const getFeedPhotoURL = (id: string, size = 500): string => {
   return `${FEED_IMAGE_URL}${id}/${size}/${size}`
 }
