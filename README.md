@@ -30,8 +30,7 @@ Build an Instagram-like feed using React, Vite and Tailwind CSS, where users can
 ### Resources
 
 - Use this JSON file to populate your feed with posts: [instagram sample](https://gist.github.com/mgcm/4d4ddf687b1399b87de4)
-- For profile pics, you can use [robohash.org](https://robohash.org/). Ex: https://robohash.org/vinimarcili123 (replace the username vinimarcili123 with any string)
-- For Feed pics, you can use [picsum.photos](https://picsum.photos/). Ex: https://picsum.photos/id/1084/400/400 (replace the id 1084 with any number)
+- For pics, you can use [robohash.org](https://robohash.org/). Ex: https://robohash.org/vinimarcili123 (replace the username vinimarcili123 with any string)
 
 ## Deploy
 
