@@ -3,7 +3,6 @@ import { Post } from "../types/post.type"
 
 const API_URL = './public/data.json'
 const USER_IMAGE_URL = 'https://robohash.org/'
-const FEED_IMAGE_URL = 'https://picsum.photos/id/'
 
 export const fetchInstagram = async (): Promise<InstagramResponse> => {
   const response = await fetch(API_URL)
@@ -29,6 +28,6 @@ export const getUserPhotoURL = (username: string): string => {
   return `${USER_IMAGE_URL}${username}`
 }
 
-export const getFeedPhotoURL = (id: string, size = 500): string => {
-  return `${FEED_IMAGE_URL}${id}/${size}/${size}`
+export const getFeedPhotoURL = (id: string): string => {
+  return `${USER_IMAGE_URL}${id}`
 }
